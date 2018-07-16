@@ -1,0 +1,37 @@
+div#main-container{
+	background: linear-gradient(to bottom right, #0174DF, #2E9AFE);
+}
+
+
+img#logo-app{
+	margin-bottom: 10px;
+}
+
+div#line{
+	height:0;
+	margin-top:15px;
+	margin-bottom:20px;
+	overflow:hidden;
+	border-top:2px solid #585858
+}
+
+form#login-form div.input-group{
+	margin-top: 10px;
+}
+
+.br-bg-main-color{
+	background-color: #D358F7;
+}
+
+.br-bg-secondary-color{
+	background-color: #585858;
+}
+
+.br-tx-main-color{
+	color: #A4A4A4;
+	color: white;
+}
+
+.br-tx-secondary-color{
+	color: white;
+}
