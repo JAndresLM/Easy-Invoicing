@@ -52,7 +52,11 @@
                             </div>
                             <div class="row mx-auto">
                                 <div id="notifications-section" class="container">
-                                    <div class="row text-center align-items-center">
+                                    <div
+                                        id="no-message"
+                                        class="row text-center align-items-center"
+                                        style="display: none" 
+                                    >
                                         <div class="col-5 mx-auto line">
                                         </div>
                                         <div class="col-2 mx-auto anchor">
@@ -63,13 +67,33 @@
                                     </div>
                                     <div 
                                         id="successfull-message" 
-                                        class='row text-center align-items-center'
-                                        style="display:none"
+                                        class='row align-items-center message successfull-message'
+                                        style="display: none" 
                                     >
-                                        <div class="col-12 mx-auto">
+                                        <div 
+                                            class="col-1 text-left" 
+                                            style="font-size: 18px;"
+                                        >
+                                            <span class="lnr lnr-checkmark-circle" ></span>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>Contraseña Reestablecida Correctamente, intente de nuevo</span>
                                         </div>
                                     </div>
-                                    <div id="failure-message" class='row text-center align-items-center'>
+                                    <div 
+                                        id="failure-message" 
+                                        class='row align-items-center message failure-message'
+                                        style="display:" 
+                                    >
+                                        <div 
+                                            class="col-1 text-left" 
+                                            style="font-size: 18px;"
+                                        >
+                                            <span class="lnr lnr-warning" ></span>
+                                        </div>
+                                        <div class="col-11">
+                                            <span>Credenciales no coinciden, por favor intente de nuevo</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +141,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mx-auto align-items-center">
+                            <div id="secondary-actions" class="row mx-auto align-items-center">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-12 col-sm-7 text-center"'>

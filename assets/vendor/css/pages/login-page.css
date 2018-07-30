@@ -10,7 +10,16 @@ div.main-row{
 	width: 70%;
 }
 
-div.main-row div.card-body div.row{
+#notifications-section{
+	margin-top: 10px;
+}
+
+#no-message{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#secondary-actions{
 	margin-top: 10px;
 }
 
@@ -21,6 +30,21 @@ div.main-row div.card-body div.row{
 
 .anchor{
 	color:#0174DF;
+}
+
+.successfull-message{
+	background-color: #92d36e;
+}
+
+.failure-message{
+	background-color: #ff5d55;
+}
+
+.message{
+	padding: 10px;
+	padding-left: 2px;
+	color:white;
+	line-height: 1.15
 }
 
 form#login-form{
@@ -57,4 +81,5 @@ form#login-form div.input-group{
 .custom-link:hover{
 	color: #ffa834;
 	text-decoration: none;
+	font-weight: bold;
 }
