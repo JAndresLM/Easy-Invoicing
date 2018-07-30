@@ -1,22 +1,35 @@
-div#main-container{
-	background: linear-gradient(to bottom right, #0174DF, #2E9AFE);
+body, div#main-container{
+	background-color: #0174DF
 }
 
-
-img#logo-app{
-	margin-bottom: 10px;
+div.main-row{
+	height: 100vh;
 }
 
-div#line{
-	height:0;
-	margin-top:15px;
-	margin-bottom:20px;
-	overflow:hidden;
-	border-top:2px solid #585858
+#logo-section{
+	width: 70%;
+}
+
+div.main-row div.card-body div.row{
+	margin-top: 10px;
+}
+
+.line{
+	height: 2px;
+	background-color: #585858;
+}
+
+.anchor{
+	color:#0174DF;
+}
+
+form#login-form{
+	width: 100%;
 }
 
 form#login-form div.input-group{
-	margin-top: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .br-bg-main-color{
@@ -24,7 +37,7 @@ form#login-form div.input-group{
 }
 
 .br-bg-secondary-color{
-	background-color: #585858;
+	background-color: #0174DF;
 }
 
 .br-tx-main-color{
@@ -34,4 +47,14 @@ form#login-form div.input-group{
 
 .br-tx-secondary-color{
 	color: white;
+}
+
+.custom-link{
+	color: #585858;
+	text-decoration: none;
+}
+
+.custom-link:hover{
+	color: #ffa834;
+	text-decoration: none;
 }
