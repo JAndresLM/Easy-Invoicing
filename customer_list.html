@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" class="default-style">
+
+<head>
+    <title>Barco Factura - Inicio</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link 
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" 
+        rel="stylesheet"
+    >
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+    <link 
+        rel="stylesheet" 
+        href="assets/vendor/css/rtl/theme-corporate.css" 
+        class="theme-settings-theme-css"
+    >
+    <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+    <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+
+    <script src="assets/vendor/js/material-ripple.js"></script>
+    <script src="assets/vendor/js/layout-helpers.js"></script>
+
+    <!-- Theme settings -->
+    <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+    <script src="assets/vendor/js/theme-settings.js"></script>
+    <script>
+        window.themeSettings = new ThemeSettings({
+            cssPath: 'assets/vendor/css/rtl/',
+            themesPath: 'assets/vendor/css/rtl/'
+        });
+    </script>
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/js/pace.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+</head>
+
+<body>
+    <!-- Page Loader In Top Page -->
+    <div class="page-loader">
+        <div class="bg-primary"></div>
+    </div>
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-2">
+        <div class="layout-inner">
+            <!-- Layout sidenav -->
+            <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark">
+                <!-- Brand demo (see assets/css/demo/demo.css) -->
+                <div class="app-brand demo">
+                    <span class="app-brand-logo demo bg-primary">
+                        <svg 
+                            viewBox="0 0 148 80" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <defs>
+                                <linearGradient 
+                                    id="a" 
+                                    x1="46.49" 
+                                    x2="62.46" 
+                                    y1="53.39" 
+                                    y2="48.2" 
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-opacity=".25" offset="0"></stop>
+                                    <stop stop-opacity=".1" offset=".3"></stop>
+                                    <stop stop-opacity="0" offset=".9"></stop>
+                                </linearGradient>
+                                <linearGradient 
+                                    id="e" 
+                                    x1="76.9" 
+                                    x2="92.64" 
+                                    y1="26.38" 
+                                    y2="31.49" 
+                                    xlink:href="#a"
+                                > 
+                                </linearGradient>
+                                <linearGradient 
+                                    id="d" 
+                                    x1="107.12" 
+                                    x2="122.74" 
+                                    y1="53.41" 
+                                    y2="48.33" 
+                                    xlink:href="#a"
+                                >
+                                </linearGradient>
+                            </defs>
+                            <path 
+                                style="fill: #fff;" 
+                                transform="translate(-.1)" 
+                                d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"
+                            >
+                            </path>
+                            <path 
+                                transform="translate(-.1)" 
+                                d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" 
+                                fill="url(#a)"
+                            >
+                            </path>
+                            <path 
+                                transform="translate(-.1)" 
+                                d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" 
+                                fill="url(#e)"
+                            >
+                            </path>
+                            <path 
+                                transform="translate(-.1)" 
+                                d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" 
+                                fill="url(#d)"
+                            >
+                            </path>
+                        </svg>
+                    </span>
+                    <a 
+                        href="index.html" 
+                        class="app-brand-text demo sidenav-text font-weight-normal ml-2"
+                    >
+                        Barco Factura
+                    </a>
+                    <a 
+                        href="javascript:void(0)" 
+                        class="layout-sidenav-toggle sidenav-link text-large ml-auto"
+                    >
+                        <i class="lnr lnr-menu align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="sidenav-divider mt-0"></div>
+
+                <!-- Sidebar Menu -->
+                <ul class="sidenav-inner py-1">
+                    <li class="sidenav-item">
+                        <a href="typography.html" class="sidenav-link">
+                            <i class="sidenav-icon lnr lnr-home"></i>
+                            <div>Dashboard</div>
+                        </a>
+                    </li>
+                    <li class="sidenav-divider mb-1"></li>
+                    <li class="sidenav-item">
+                        <a href="javascript:void(0)" class="sidenav-link sidenav-toggle">
+                            <i class="sidenav-icon lnr lnr-layers"></i>
+                            <div>Documentos</div>
+                        </a>
+                        <!-- Submenu Items -->
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item">
+                                <a href="invoice_list.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-file-add"></i>
+                                    <div>Facturas</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_helpers.html" class="sidenav-link">
+                                    <i class="sidenav-icon pe-7s-note2"></i>
+                                    <div>Proformas</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-1.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-file-empty"></i>
+                                    <div>Recibos</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-1-flex.html" class="sidenav-link">
+                                    <i class="sidenav-icon pe-7s-notebook"></i>
+                                    <div>Notas de Credito</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-2.html" class="sidenav-link">
+                                    <i class="sidenav-icon pe-7s-bookmarks"></i>
+                                    <div>Notas de Debito</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-divider mb-1"></li>
+                    <li class="sidenav-item">
+                        <a href="typography.html" class="sidenav-link">
+                            <i class="sidenav-icon lnr lnr-chart-bars"></i>
+                            <div>Reportes</div>
+                        </a>
+                    </li>
+
+                    <li class="sidenav-divider mb-1"></li>
+                    <li class="sidenav-item open active">
+                        <a href="javascript:void(0)" class="sidenav-link sidenav-toggle">
+                            <i class="sidenav-icon lnr lnr-cog"></i>
+                            <div>Configuración</div>
+                        </a>
+                        <!-- Submenu Configuration -->
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item active">
+                                <a href="customer_list.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-users"></i>
+                                    <div>Clientes</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_helpers.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-gift"></i>
+                                    <div>Productos</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-1.html" class="sidenav-link">
+                                    <i class="sidenav-icon pe-7s-box2"></i>
+                                    <div>Unidades</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-1-flex.html" class="sidenav-link">
+                                    <i class="sidenav-icon pe-7s-hammer"></i>
+                                    <div>Impuestos</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-2.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-apartment"></i>
+                                    <div>Compañias</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="layouts_layout-2-flex.html" class="sidenav-link">
+                                    <i class="sidenav-icon lnr lnr-user"></i>
+                                    <div>Usuarios</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-divider mb-1"></li>
+                </ul>
+            </div><!-- / Layout sidenav -->
+
+            <!-- Layout container -->
+            <div class="layout-container">
+                <!-- Layout navbar -->
+                <nav 
+                    class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" 
+                    id="layout-navbar"
+                >
+                    <!-- Brand demo (see assets/css/demo/demo.css) -->
+                    <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+                        <span class="app-brand-logo demo bg-primary">
+                            <svg 
+                                viewBox="0 0 148 80" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <defs>
+                                    <linearGradient 
+                                        id="a" 
+                                        x1="46.49" 
+                                        x2="62.46" 
+                                        y1="53.39" 
+                                        y2="48.2" 
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-opacity=".25" offset="0"></stop>
+                                        <stop stop-opacity=".1" offset=".3"></stop>
+                                        <stop stop-opacity="0" offset=".9"></stop>
+                                    </linearGradient>
+                                    <linearGradient 
+                                        id="e" 
+                                        x1="76.9" 
+                                        x2="92.64" 
+                                        y1="26.38" 
+                                        y2="31.49" 
+                                        xlink:href="#a"
+                                    >
+                                    </linearGradient>
+                                    <linearGradient 
+                                        id="d" 
+                                        x1="107.12" 
+                                        x2="122.74" 
+                                        y1="53.41" 
+                                        y2="48.33" 
+                                        xlink:href="#a"
+                                    ></linearGradient>
+                                </defs>
+                                <path 
+                                    style="fill: #fff;" 
+                                    transform="translate(-.1)" 
+                                    d="M121.36,0,104.42,45.08,88.71,3.28A5.09,5.09,0,0,0,83.93,0H64.27A5.09,5.09,0,0,0,59.5,3.28L43.79,45.08,26.85,0H.1L29.43,76.74A5.09,5.09,0,0,0,34.19,80H53.39a5.09,5.09,0,0,0,4.77-3.26L74.1,35l16,41.74A5.09,5.09,0,0,0,94.82,80h18.95a5.09,5.09,0,0,0,4.76-3.24L148.1,0Z"
+                                >
+                                </path>
+                                <path 
+                                    transform="translate(-.1)"
+                                    d="M52.19,22.73l-8.4,22.35L56.51,78.94a5,5,0,0,0,1.64-2.19l7.34-19.2Z" 
+                                    fill="url(#a)"
+                                >
+                                </path>
+                                <path 
+                                    transform="translate(-.1)" 
+                                    d="M95.73,22l-7-18.69a5,5,0,0,0-1.64-2.21L74.1,35l8.33,21.79Z" 
+                                    fill="url(#e)"
+                                >
+                                </path>
+                                <path 
+                                    transform="translate(-.1)" 
+                                    d="M112.73,23l-8.31,22.12,12.66,33.7a5,5,0,0,0,1.45-2l7.3-18.93Z" 
+                                    fill="url(#d)">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="app-brand-text demo font-weight-normal ml-2">Barco Factura</span>
+                    </a>
+
+                    <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+                    <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+                        <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+                            <i class="ion ion-md-menu text-large align-middle"></i>
+                        </a>
+                    </div>
+
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#layout-navbar-collapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+                        <div class="navbar-nav align-items-lg-center ml-auto">
+
+                            <div class="nav-item mr-lg-3">
+                                <button type="button" class="btn btn-secondary">Documentos disponibles:
+                                    <span class="badge">4/50</span>
+                                </button>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="nav-item d-none d-lg-block text-big font-weight-light line-height-1 opacity-25 mr-3 ml-1">|</div>
+
+                            <div class="demo-navbar-user nav-item dropdown">
+                                <a 
+                                    class="nav-link dropdown-toggle" 
+                                    href="#" 
+                                    data-toggle="dropdown"
+                                >
+                                    <span 
+                                        class="d-inline-flex flex-lg-row-reverse align-items-center align-middle"
+                                    >
+                                        <img 
+                                            src="assets/img/avatars/1.png" 
+                                            alt class="d-block ui-w-30 rounded-circle"
+                                        >
+                                        <span class="px-1 mr-lg-2 ml-2 ml-lg-0">Isaac Pacheco</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="javascript:void(0)" class="dropdown-item">
+                                        <i class="lnr lnr-user text-lightest"></i> &nbsp; Mi Perfil
+                                    </a>
+                                    <a href="javascript:void(0)" class="dropdown-item">
+                                        <i class="lnr lnr-cart text-lightest"></i> &nbsp; Mi Plan
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0)" class="dropdown-item">
+                                        <i class="lnr lnr-users text-danger"></i> &nbsp; Cambiar Sesión
+                                    </a>
+                                    <a href="index.html" class="dropdown-item">
+                                        <i class="lnr lnr-exit text-danger"></i> &nbsp; Cerrar Sesión
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- / Layout navbar -->
+
+                <!-- Layout content -->
+                <div class="layout-content">
+                    <!-- Content -->
+                    <div class="container-fluid flex-grow-1 container-p-y">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- Clientes -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <span class="text-info font-weight-bolder">LISTADO DE CLIENTES</span>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <button 
+                                                    type="button" 
+                                                    class="btn btn-success"
+                                                    onclick="location.href='customer_add.html';"
+                                                >CREAR CLIENTE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-datatable table-responsive">
+                                        <div 
+                                            id="DataTables_Table_1_wrapper" 
+                                            class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"
+                                        >
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div 
+                                                        class="dataTables_length" 
+                                                        id="DataTables_Table_1_length"
+                                                    >
+                                                        <div class="input-group input-group-md">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    Mostrar
+                                                                </span>
+                                                            </div>
+                                                            <select class="custom-select">
+                                                                <option selected="">10</option>
+                                                                <option value="1">25</option>
+                                                                <option value="2">50</option>
+                                                                <option value="3">100</option>
+                                                            </select>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">
+                                                                    Clientes
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div 
+                                                        id="DataTables_Table_1_filter" 
+                                                        class="dataTables_filter"
+                                                    >
+                                                        <div class="input-group input-group-md">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <i class="pe-7s-filter"></i>
+                                                                </span>
+                                                            </div>
+                                                            <input 
+                                                                type="search" 
+                                                                class="form-control" 
+                                                                placeholder="Filtrar Por Valores" 
+                                                                aria-controls="DataTables_Table_1"
+                                                            >
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text">
+                                                                    <i class="lnr lnr-magnifier"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table 
+                                                        class="datatables-demo table table-striped table-bordered dataTable no-footer" 
+                                                        id="DataTables_Table_1" 
+                                                        role="grid" 
+                                                        aria-describedby="DataTables_Table_1_info"
+                                                    >
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th 
+                                                                    class="sorting_asc" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-sort="ascending" 
+                                                                    aria-label="Numero Factura: activate to sort column descending" 
+                                                                    style="width: 200px;"
+                                                                >
+                                                                    N° de Factura
+                                                                </th>
+                                                                <th 
+                                                                    class="sorting" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-label="Fecha: activate to sort column ascending" 
+                                                                    style="width: 200px;"
+                                                                >
+                                                                    Fecha
+                                                                </th>
+                                                                <th 
+                                                                    class="sorting" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-label="Cliente: activate to sort column ascending" 
+                                                                    style="width: 400px;"
+                                                                >
+                                                                    Cliente
+                                                                </th>
+                                                                <th 
+                                                                    class="sorting" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-label="Monto: activate to sort column ascending" 
+                                                                    style="width: 200px;"
+                                                                >
+                                                                    Monto
+                                                                </th>
+                                                                <th 
+                                                                    class="sorting" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-label="Estado: activate to sort column ascending" 
+                                                                    style="width: 200px;"
+                                                                >
+                                                                    Estado
+                                                                </th>
+                                                                <th 
+                                                                    class="sorting" 
+                                                                    tabindex="0" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    rowspan="1" 
+                                                                    colspan="1" 
+                                                                    aria-label="Acciones: activate to sort column ascending" 
+                                                                    style="width: 200px;"
+                                                                >
+                                                                    Acciones
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="gradeA odd" role="row">
+                                                                <td>FAC-01</td>
+                                                                <td>05/08/2018</td>
+                                                                <td>El Barco Technology</td>
+                                                                <td class="center">$2500</td>
+                                                                <td class="center">Pendiente</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                            <tr class="gradeA even" role="row">
+                                                                <td>FAC-02</td>
+                                                                <td>04/08/2018</td>
+                                                                <td>Meco</td>
+                                                                <td class="center">$1325</td>
+                                                                <td class="center">Aprobada</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                            <tr class="gradeA odd" role="row">
+                                                                <td>FAC-01</td>
+                                                                <td>05/08/2018</td>
+                                                                <td>El Barco Technology</td>
+                                                                <td class="center">$2500</td>
+                                                                <td class="center">Pendiente</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                            <tr class="gradeA even" role="row">
+                                                                <td>FAC-02</td>
+                                                                <td>04/08/2018</td>
+                                                                <td>Meco</td>
+                                                                <td class="center">$1325</td>
+                                                                <td class="center">Aprobada</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                            <tr class="gradeA odd" role="row">
+                                                                <td>FAC-01</td>
+                                                                <td>05/08/2018</td>
+                                                                <td>El Barco Technology</td>
+                                                                <td class="center">$2500</td>
+                                                                <td class="center">Pendiente</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                            <tr class="gradeA even" role="row">
+                                                                <td>FAC-02</td>
+                                                                <td>04/08/2018</td>
+                                                                <td>Meco</td>
+                                                                <td class="center">$1325</td>
+                                                                <td class="center">Aprobada</td>
+                                                                <td class="center">Ver</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-5">
+                                                    <div 
+                                                        class="dataTables_info" 
+                                                        id="DataTables_Table_1_info" 
+                                                        role="status" 
+                                                        aria-live="polite"
+                                                    >
+                                                        Mostrando 1-10 de 45 clientes
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-7">
+                                                    <div 
+                                                        class="dataTables_paginate paging_simple_numbers" 
+                                                        id="DataTables_Table_1_paginate"
+                                                    >
+                                                        <ul class="pagination">
+                                                            <li 
+                                                                class="paginate_button page-item previous" 
+                                                                id="DataTables_Table_1_previous"
+                                                            >
+                                                                <a 
+                                                                    href="#" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    data-dt-idx="0" 
+                                                                    tabindex="0" 
+                                                                    class="page-link"
+                                                                >
+                                                                    Anterior
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-item active">
+                                                                <a 
+                                                                    href="#" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    data-dt-idx="1" 
+                                                                    tabindex="0" 
+                                                                    class="page-link"
+                                                                >
+                                                                    1
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-item">
+                                                                <a 
+                                                                    href="#" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    data-dt-idx="1" 
+                                                                    tabindex="0" 
+                                                                    class="page-link"
+                                                                >
+                                                                    2
+                                                                </a>
+                                                            </li>
+                                                            <li class="paginate_button page-iteme">
+                                                                <a 
+                                                                    href="#" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    data-dt-idx="1" 
+                                                                    tabindex="0" 
+                                                                    class="page-link"
+                                                                >
+                                                                    3
+                                                                </a>
+                                                            </li>
+                                                            <li 
+                                                                class="paginate_button page-item next" 
+                                                                id="DataTables_Table_1_next"
+                                                            >
+                                                                <a 
+                                                                    href="#" 
+                                                                    aria-controls="DataTables_Table_1" 
+                                                                    data-dt-idx="7" 
+                                                                    tabindex="0" 
+                                                                    class="page-link"
+                                                                >
+                                                                    Siguiente
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+
+                <!-- Layout footer -->
+                <nav class="layout-footer footer bg-footer-theme">
+                    <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+                        <div class="pt-3">
+                            Copyright © 2018
+                            <span class="footer-text font-weight-bolder"> Barco Factura</span>
+                            | Un producto de 
+                            <a href="http://elbarcotechnology.com" target="_blank">El Barco Technology</a>.
+                        </div>
+                    </div>
+                </nav><!-- / Layout footer -->
+            </div><!-- Layout content -->
+        </div><!-- / Layout container -->
+    </div><!-- / Layout Wraper -->
+
+    <!-- Core scripts -->
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/sidenav.js"></script>
+
+    <!-- Libs -->
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
+
+    <!-- Demo -->
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/dashboards_dashboard-1.js"></script>
+</body>
+
+</html>
